@@ -1,11 +1,11 @@
 for(let a=0; a<document.querySelectorAll(".faqclick").length ; a++){
     document.querySelectorAll(".faqclick")[a].addEventListener("click",   function () {
-        if (this.innerHTML.includes("plus.svg")) {
-            this.innerHTML = '<img src="pics/xmark.svg">';
+        if (this.innerHTML.includes("https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/plus.svg")) {
+            this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/xmark.svg">';
             document.querySelectorAll(".cont")[a].querySelector(".faqans").classList.add("ans");
 
         } else {
-            this.innerHTML = '<img src="pics/plus.svg">';
+            this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/plus.svg">';
             document.querySelectorAll(".cont")[a].querySelector(".faqans").classList.remove("ans");
         }
     });
