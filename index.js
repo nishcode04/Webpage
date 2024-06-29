@@ -1,30 +1,21 @@
-function bindEvent(e, eventName, callback) {
-    if(e.addEventListener) // new browsers
-        e.addEventListener(eventName, callback, false);
-    else if(e.attachEvent) // IE
-        e.attachEvent('on'+ eventName, callback);
-};
-
-bindEvent(document.body, 'scroll', function(e) {
-    document.body.scrollLeft = 0;
-});
 
 
 
 
 
-for(let a=0; a<document.querySelectorAll(".faqclick").length ; a++){
-    document.querySelectorAll(".faqclick")[a].addEventListener("click",   function () {
-        if (this.innerHTML.includes("https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/plus.svg")) {
-            this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/xmark.svg">';
-            document.querySelectorAll(".cont")[a].querySelector(".faqans").classList.add("ans");
+for (let a = 0; a < document.querySelectorAll(".faqclick").length; a++) {
+  document.querySelectorAll(".faqclick")[a].addEventListener("click", function () {
+      let faqAnswer = this.closest(".cont").querySelector(".faqans");
+      if (this.innerHTML.includes("https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/plus.svg")) {
+          this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/xmark.svg">';
+          faqAnswer.classList.add("ans");
+      } else {
+          this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/plus.svg">';
+          faqAnswer.classList.remove("ans");
+      }
+  });
+}
 
-        } else {
-            this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/plus.svg">';
-            document.querySelectorAll(".cont")[a].querySelector(".faqans").classList.remove("ans");
-        }
-    });
-    }
 
 
 
