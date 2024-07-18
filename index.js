@@ -6,11 +6,11 @@
 for (let a = 0; a < document.querySelectorAll(".faqclick").length; a++) {
   document.querySelectorAll(".faqclick")[a].addEventListener("click", function () {
       let faqAnswer = this.closest(".cont").querySelector(".faqans");
-      if (this.innerHTML.includes("https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/plus.svg")) {
-          this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/xmark.svg">';
+      if (this.innerHTML.includes("https://raw.githubusercontent.com/nishcode04/Webpage/920bfda8100aabc5be344f02e4acd7fe317d566e/pics/plus.svg")) {
+          this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/Webpage/920bfda8100aabc5be344f02e4acd7fe317d566e/pics/xmark.svg">';
           faqAnswer.classList.add("ans");
       } else {
-          this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/SocialCommerce/24ed119586ac530ea478c46422b55e2e93fc8524/plus.svg">';
+          this.innerHTML = '<img src="https://raw.githubusercontent.com/nishcode04/Webpage/920bfda8100aabc5be344f02e4acd7fe317d566e/pics/plus.svg">';
           faqAnswer.classList.remove("ans");
       }
   });
