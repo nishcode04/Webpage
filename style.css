@@ -2400,6 +2400,8 @@ padding: 10px;
     top: -190px;
 }
 
+
+
 .card{
     position: relative;
     top: -1300px;
@@ -2507,7 +2509,7 @@ padding: 10px;
         }
 
         .cont{
-            transform: scale(0.7,0.7);
+            transform: scale(0.72,0.72);
             position: relative;
             top: -200px;
             
@@ -2704,7 +2706,7 @@ padding: 10px;
   .footer {
     overflow: hidden;
     font-family: "Inter";
-    background-color: #333;
+    background-color: #333333;
     color: white;
     padding: 40px 0;
     display: flex;
@@ -2712,8 +2714,7 @@ padding: 10px;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 2800px;
-}
+    top: 2800px;}
 .footer .company-description {
     flex: 1 1 100%;
     font-size: 12px;
