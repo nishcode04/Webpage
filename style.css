@@ -1952,7 +1952,7 @@ margin-left: 40%;
 
 
 
-@media (min-width:521px) and (max-width: 768px) {
+@media (min-width:521px) and (max-width: 769px) {
  
     .dropdown-content{
         position: absolute;
@@ -2224,7 +2224,7 @@ line-height: 30px;
 }
 
 
-@media (min-width:768px) and (max-width: 990px){
+@media (min-width:769px) and (max-width: 990px){
 #det{
     transform: scale(0.8,0.8);
     position: relative;
